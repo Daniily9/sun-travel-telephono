@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tours.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sun Travel</title>
+</head>
+<body>
+
+    <div class="loading-bar-container">
+        <div class="loading-bar" id="loadingBar"></div>
+    </div>
+
+    <div class="wrapper">
+
+        <header>
+                
+            <a class="logo" href="" >
+
+                <div>
+                    <img class="image1" src="./logo.png">
+                </div>
+
+                <p class="text-logo">Sun Travel</p>
+
+            </a>
+
+            <nav class="desctop-nav">
+
+                <ul>
+
+                    <li>
+                        <a class="menu" href="index.html" id="aboutUs">Про нас</a>
+                    </li>
+
+                    <li>
+                        <a class="menu1" href="Tours.html" id="tours">Тури</a>
+                    </li>
+
+                    <li>
+                        <a class="menu" href="Contact.html" id="contactUs">Контакти</a>
+                    </li>
+                    <li>
+                        <div class="lang-theme">
+
+                            <div>
+
+                                <button class="theme"><img class="sun-img" src="sun.png" alt=""></button>
+
+                            </div>
+
+                            <div class="dropdown">
+
+                                <button id="language" class="dropbtn"><img class="earth-img" src="globe.png"></button>
+
+                                <div class="dropdown-content">
+
+                                    <a class="lang" href="#" id="lang-en" onclick="changeLanguage('en')">EN</a>
+                                    <a class="lang" href="#" id="lang-uk" onclick="changeLanguage('uk')">UA</a>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>     
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <nav class="mobile-nav">
+
+                <ul>
+
+                    <li>
+                        <a class="menu" href="index.html" id="aboutUs">Про нас</a>
+                    </li>
+
+                    <li>
+                        <a class="menu" href="Tours.html" id="tours">Тури</a>
+                    </li>
+
+                    <li>
+                        <a class="menu" href="Contact.html" id="contactUs">Контакти</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="burger">
+                <span></span>
+            </div>
+
+        </header>
+
+        <div class="hr1"><hr class="hr2"></div>
+
+        <main class="main-desctop">
+
+            <div class="main-text1">
+
+                <p id="ToursText" class="tour-text">Тури</p>
+
+            </div>
+
+            <div class="ip">
+            <form onsubmit="event.preventDefault(); myFunction();">
+                <input type="text" id="mySearch" placeholder="Пошук турів..">
+                <button class="dropbtn" id="myButton" type="submit"><img src="icons8-search-30.png" alt=""></button>
+            </form>
+            </div>
+
+            <div class="Tours">
+
+                <div class="tour1-3">
+            
+                    <p class="text2">1</p>
+                
+                    <img class="image2" src="franch.jpg">
+                
+                    <p class="text2" id="country1">Франція</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                    
+                    <a class="text5" href="" id="price1">Ціна 20000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">2</p>
+            
+                    <img class="image2" src="turkish.jpg">
+            
+                    <p class="text2" id="country2">Турція</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price2">Ціна 18000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">3</p>
+            
+                    <img class="image2" src="egypе.jpg">
+            
+                    <p class="text2" id="country3">Єгипет</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price3">Ціна 30000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+            </div>
+            
+            <div class="Tours">
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">4</p>
+                
+                    <img class="image2" src="spane.jpg">
+                
+                    <p class="text2" id="country4">Іспанія</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                    
+                    <a class="text5" href="" id="price4">Ціна 35000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">5</p>
+            
+                    <img class="image2" src="italy.jpg">
+            
+                    <p class="text2" id="country5">Італія</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price5">Ціна 40000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">6</p>
+            
+                    <img class="image2" src="bali.jpg">
+            
+                    <p class="text2" id="country6">Балі</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price6">Ціна 50000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+            </div>
+            
+            <div class="Tours">
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">7</p>
+                
+                    <img class="image2" src="Великобритания.jpg">
+                
+                    <p class="text2" id="country7">Велика Британія</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                    
+                    <a class="text5" href="" id="price7">Ціна 55000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">8</p>
+            
+                    <img class="image2" src="Greece.jpg">
+            
+                    <p class="text2" id="country8">Греція</p>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price8">Ціна 65000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">9</p>
+            
+                    <img class="image2" src="india.jpg">
+            
+                    <p class="text2" id="country9">Індія</п>
+            
+                    <hr>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price9">Ціна 45000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+            </div>
+
+        </main>
+
+        <main class="mobile-main">
+
+            <div class="main-text1">
+
+                <p id="ToursText" class="tour-text">Tours</p>
+
+            </div>
+
+            <div class="ip">
+                <form onsubmit="event.preventDefault(); myFunctionMobile();">
+                    <input type="text" id="mySearchMobile" placeholder="Пошук турів..">
+                    <button class="dropbtn" id="myButtonMobile" type="submit"><img src="icons8-search-30.png" alt=""></button>
+                </form>
+            </div>
+
+            <div class="Tours">
+
+                <div class="tour1-3">
+            
+                    <p class="text2">1</p>
+
+                    <div class="container">
+
+                        <img class="image2" src="franch.jpg">
+
+                    </div>
+
+                    <p class="text2" id="country1">Франція</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                    
+                    <a class="text5" href="" id="price1">Ціна 20000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">2</p>
+                    
+                    <div class="container">
+
+                        <img class="image2" src="turkish.jpg">
+
+                    </div>
+            
+                    <p class="text2" id="country2">Турція</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price2">Ціна 18000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">3</p>
+
+                    <div class="container">
+
+                        <img class="image2" src="egypе.jpg">
+
+                    </div>
+                    
+                    <p class="text2" id="country3">Єгипет</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price3">Ціна 30000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+            </div>
+            
+            <div class="Tours">
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">4</p>
+
+                    <div class="container">
+
+                        <img class="image2" src="spane.jpg">
+
+                    </div>
+                
+                    <p class="text2" id="country4">Іспанія</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                    
+                    <a class="text5" href="" id="price4">Ціна 35000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">5</p>
+
+                    <div class="container">
+
+                        <img class="image2" src="italy.jpg">
+
+                    </div>
+            
+                    <p class="text2" id="country5">Італія</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price5">Ціна 40000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">6</p>
+            
+                    <div class="container">
+
+                        <img class="image2" src="bali.jpg">
+
+                    </div>
+            
+                    <p class="text2" id="country6">Балі</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price6">Ціна 50000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+            </div>
+            
+            <div class="Tours">
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">7</p>
+                
+                    <div class="container">
+
+                        <img class="image2" src="Великобритания.jpg">
+
+                    </div>
+                
+                    <p class="text2" id="country7">Велика Британія</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                    
+                    <a class="text5" href="" id="price7">Ціна 55000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">8</p>
+            
+                    <div class="container">
+
+                        <img class="image2" src="Greece.jpg">
+
+                    </div>
+            
+                    <p class="text2" id="country8">Греція</p>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price8">Ціна 65000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+                <div class="tour1-3">
+            
+                    <p class="text2">9</p>
+            
+                    <div class="container">
+
+                        <img class="image2" src="india.jpg">
+
+                    </div>
+                    
+                    <p class="text2" id="country9">Індія</п>
+            
+                    <div class="hr1"><hr></div>
+            
+                <div class="Tours1">
+                
+                    <a class="text5" href="" id="price9">Ціна 45000 грн</a> 
+                
+                </div>
+                
+                </div>
+            
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
